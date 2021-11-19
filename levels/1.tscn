@@ -25,5 +25,7 @@ script = ExtResource( 3 )
 position = Vector2( 928, 544 )
 
 [node name="debug" parent="." instance=ExtResource( 5 )]
-margin_top = 168.0
-margin_bottom = 456.0
+margin_left = 235.0
+margin_top = 160.0
+margin_right = 691.0
+margin_bottom = 448.0
