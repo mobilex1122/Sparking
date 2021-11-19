@@ -4,7 +4,7 @@ onready var sprite = get_node("player")
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var speed = 40
+var speed = 80
 var grid = Vector2(0,0)
 
 var diraction = Vector2()
