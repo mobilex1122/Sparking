@@ -77,9 +77,9 @@ tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
 "times": PoolRealArray( 0, 5.3, 5.7, 6.3, 10.4, 10.7, 10.9 ),
-"transitions": PoolRealArray( 1, 0.297302, 0.241484, 1, 0.15932, 1, 1 ),
+"transitions": PoolRealArray( 1, 0.297302, 0.241484, 1, 0.15932, 0.176777, 1 ),
 "update": 0,
-"values": [ Vector2( 1e-05, 1.2 ), Vector2( 0, 1.2 ), Vector2( 0.5, 1.2 ), Vector2( 0.5, 600 ), Vector2( 0.5, 600 ), Vector2( 0.5, 2.90411 ), Vector2( 0, 1 ) ]
+"values": [ Vector2( 1e-05, 1.2 ), Vector2( 0, 1.2 ), Vector2( 0.5, 1.2 ), Vector2( 0.5, 600 ), Vector2( 0.5, 600 ), Vector2( 0.5, 2.90411 ), Vector2( 0, 1.2 ) ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("dark_text_transparent:scale")
@@ -144,6 +144,7 @@ anims/intro = SubResource( 1 )
 
 [node name="intro2" type="Sprite" parent="."]
 position = Vector2( 1340, 300 )
+rotation = 2.86758
 scale = Vector2( 0.282536, 0.282536 )
 texture = ExtResource( 1 )
 
@@ -158,15 +159,13 @@ scale = Vector2( 0.636719, 713 )
 texture = SubResource( 3 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-visible = false
 position = Vector2( 512, 300 )
-scale = Vector2( 1e-05, 1.2 )
+scale = Vector2( 0.5, 600 )
 texture = SubResource( 5 )
 
 [node name="dark_text_transparent" type="Sprite" parent="."]
-visible = false
 position = Vector2( 512, 300 )
-scale = Vector2( 0.2, 1.06582e-05 )
+scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="."]
