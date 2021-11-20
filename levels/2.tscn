@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://source/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://source/main-tiles.tres" type="TileSet" id=2]
+[ext_resource path="res://source/player.gd" type="Script" id=3]
+[ext_resource path="res://source/end.tscn" type="PackedScene" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="map" type="TileMap" parent="."]
+scale = Vector2( 0.20014, 0.20014 )
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 320, 320 )
+collision_layer = 524288
+collision_mask = 524288
+format = 1
+tile_data = PoolIntArray( 2, 8, 0, 65538, 5, 0, 65541, 1, 0, 65542, 6, 0, 65543, 6, 0, 65544, 6, 0, 65545, 6, 0, 65546, 2, 0, 131074, 5, 0, 131077, 5, 0, 131082, 5, 0, 196610, 5, 0, 196613, 5, 0, 196618, 5, 0, 262145, 1, 0, 262146, 9, 0, 262147, 6, 0, 262148, 6, 0, 262149, 9, 0, 262150, 6, 0, 262151, 6, 0, 262152, 6, 0, 262153, 6, 0, 262154, 3, 0, 327681, 5, 0, 327682, 5, 0, 327685, 5, 0, 393217, 5, 0, 393218, 5, 0, 393221, 5, 0, 458753, 4, 0, 458754, 11, 0, 458755, 6, 0, 458756, 6, 0, 458757, 9, 0, 458758, 6, 0, 458759, 6, 0, 458760, 6, 0, 458761, 6, 0, 458762, 6, 0, 458763, 6, 0, 458764, 6, 0, 458765, 7, 0, 524293, 4, 0, 524294, 6, 0, 524295, 6, 0, 524296, 6, 0, 524297, 6, 0, 524298, 6, 0, 524299, 6, 0, 524300, 6, 0, 524301, 6, 0, 524302, 7, 0 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 160, 32 )
+script = ExtResource( 3 )
+
+[node name="end" parent="." instance=ExtResource( 4 )]
+position = Vector2( 928, 544 )
